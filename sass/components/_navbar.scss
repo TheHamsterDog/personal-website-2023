@@ -1,0 +1,70 @@
+#nav {
+    display: none;
+}
+
+#nav:checked~.navbar {
+    width: 60rem;
+}
+.navbar-outer{
+
+}
+.navbar {
+    // width: -4rem;
+    position: fixed;
+    top: 4rem;
+    padding: 2rem  2rem 2rem 2rem;
+    border-radius: 4rem;
+    background-color: black;
+    display: block;
+    transition: all 0.3s;
+
+    width: 3.25rem;
+    height: 2.6rem;
+    overflow: hidden;
+
+    &-container {
+        position: absolute;
+        right: 0.95rem;
+        top:51%;
+        // left: 50%;
+        transform: translate(0%, -50%);
+        // width: 100rem;
+    }
+
+    &-inner {
+        overflow: hidden;
+        grid-gap: 2rem;
+        display: flex;
+        width: 59rem;
+        transition: all 0.3s;
+        align-items: center;
+    }
+
+    div {
+        cursor: pointer;
+    }
+
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    justify-content: center;
+    font-weight: 700;
+    align-items: center;
+    display: flex;
+
+    &-ball {
+        border-radius: 100%;
+        width: 5rem;
+        background-image: radial-gradient(circle, hsla(269, 97%, 37%, 1) 10%, hsla(254, 68%, 9%, 1) 35%, hsla(320, 77%, 55%, 1) 61%, hsla(315, 67%, 51%, 1));
+        transition: all 4s;
+
+        &:hover {
+            transform: rotate(400%);
+        }
+
+        cursor: pointer;
+        height: 5rem;
+    }
+
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.8);
+    right: 4rem;
+}

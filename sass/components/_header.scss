@@ -1,0 +1,97 @@
+.home-header {
+    height: calc(100vh);
+    // width: calc(100vw);
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    // grid-gap: 4rem;
+
+    &-right {
+        padding: 6.5rem;
+        // padding-left: 5rem;
+        background-image: linear-gradient(to bottom right, rgba(#0D253F, 0.9), rgba(#215F8D, 0.8));
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+
+
+        &-info {
+            display: flex;
+            flex-wrap: wrap;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 2rem;
+            width: fit-content;
+            // margin: 0 auto;;
+            // justify-content: space-evenly;
+
+            &-each {
+                margin: 1rem;
+                ;
+                padding: 4rem 2rem;
+                border-radius: .75rem;
+
+                h4 {
+                    margin: 0;
+                    font-size: 2rem;
+                }
+
+                p {
+                    margin: 1.4rem 0 0 0;
+                }
+
+                font-size: 1.6rem;
+                box-shadow: 0 0 1rem rgba(#fff, 0.3);
+
+            }
+        }
+
+    }
+
+    background-image: linear-gradient(rgba(#000, 0.3), rgba(#000, 0.2));
+
+    &-left {
+        h1 {
+            font-size: 4.5rem;
+            margin-top: 0;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 2rem;
+            font-size: 2.7rem;
+            font-weight: 200;
+
+        }
+
+        p {
+            line-height: 3rem;
+            font-size: 1.8rem;
+            font-weight: 300;
+        }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        // backdrop-filter: blur(.4rem);
+        background-color: rgba(#000, 0.6);
+        // backdrop-filter: blur(2px);
+        // z-index: 2;
+        padding: 2.5rem;
+        position: relative;
+
+        img {
+            z-index: -1;
+            top: 0;
+            filter: blur(4rem);
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+    }
+}

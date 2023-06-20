@@ -1,0 +1,54 @@
+.home-test {
+    padding: 6.5rem 6.5rem;
+    min-height: calc(92vh - 14rem);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background-image: linear-gradient(to bottom right, #4A148C, #1A237E);
+
+    &-scores {
+        border-right: 1px solid #fff;
+
+
+        &-container {
+            margin-top: 3.5rem;
+        }
+
+    }
+
+    ul {
+        overflow: hidden;
+        transition: all 0.4s;
+    }
+
+    li {
+        margin-bottom: 1.5rem;
+    }
+
+    h3 {
+        cursor: pointer;
+    }
+
+    font-size: 1.8rem;
+    grid-gap:4rem;
+
+    &-achievements {
+        &-container {
+            margin-top: 3.5rem;
+        }
+
+        display: flex;
+        flex-direction: column;
+        // justify-content: flex-end
+        align-items: flex-end;
+        ;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 3.5rem;
+
+        margin-bottom: 0;
+
+    }
+}
