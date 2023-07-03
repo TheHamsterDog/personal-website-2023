@@ -1,0 +1,42 @@
+@mixin respond($break) {
+    @if ($break==1) {
+        @media screen and (max-width: 1600px) {
+            @content
+        }
+    }
+
+    @else if ($break==2) {
+        @media screen and (max-width: 1200px) {
+            @content
+        }
+    }
+
+    @else if ($break==3) {
+        @media screen and (max-width: 1080px) {
+            @content
+        }
+    }
+
+    @else if ($break==4) {
+        @media screen and (max-width: 700px) {
+            @content
+        }
+    }
+
+    @else if ($break==5) {
+        @media screen and (max-width: 500px) {
+            @content
+        }
+    }
+    @else if ($break==6) {
+        @media screen and (max-width: 400px) {
+            @content
+        }
+    }
+    @else {
+        @media screen and (max-width: $break) {
+            @content
+        }
+    }
+
+}

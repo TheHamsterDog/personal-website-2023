@@ -3,29 +3,46 @@
 }
 
 #nav:checked~.navbar {
-    width: 60rem;
-}
-.navbar-outer{
+  
 
+  
 }
+
+.mobile-nav {
+    font-size: 20px !important;
+}
+
+.navbar-outer {}
+
 .navbar {
+    width: 54rem;
+    @include respond(1) {
+        // width: auto !important;
+
+        // flex-wrap: ;   @include respond(1) {
+        width: 80vw;
+        max-width: 30.5rem;
+        // flex-wrap: ;
+
+    }
     // width: -4rem;
     position: fixed;
     top: 4rem;
-    padding: 2rem  2rem 2rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
     border-radius: 4rem;
     background-color: black;
     display: block;
     transition: all 0.3s;
 
-    width: 3.25rem;
-    height: 2.6rem;
+    height: 2rem;
     overflow: hidden;
 
     &-container {
         position: absolute;
         right: 0.95rem;
-        top:51%;
+        top: 51%;
+
+
         // left: 50%;
         transform: translate(0%, -50%);
         // width: 100rem;
@@ -35,7 +52,35 @@
         overflow: hidden;
         grid-gap: 2rem;
         display: flex;
-        width: 59rem;
+        width: 54rem;
+
+
+
+        &-each {
+            &-text {
+
+                @include respond(1) {
+                    display: none;
+                }
+            }
+
+            &-icon {
+
+                @include respond(1) {
+                    display: inherit;
+                    margin-right: 1rem;
+                    font-size: 2.5rem !important;
+                }
+
+                display: none;
+            }
+        }
+
+        @include respond(1) {
+            width: auto;
+            // flex-wrap: ;
+        }
+
         transition: all 0.3s;
         align-items: center;
     }
@@ -44,6 +89,7 @@
         cursor: pointer;
     }
 
+    z-index: 4;
     font-size: 1.6rem;
     text-transform: uppercase;
     justify-content: center;
@@ -51,19 +97,7 @@
     align-items: center;
     display: flex;
 
-    &-ball {
-        border-radius: 100%;
-        width: 5rem;
-        background-image: radial-gradient(circle, hsla(269, 97%, 37%, 1) 10%, hsla(254, 68%, 9%, 1) 35%, hsla(320, 77%, 55%, 1) 61%, hsla(315, 67%, 51%, 1));
-        transition: all 4s;
 
-        &:hover {
-            transform: rotate(400%);
-        }
-
-        cursor: pointer;
-        height: 5rem;
-    }
 
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.8);
     right: 4rem;

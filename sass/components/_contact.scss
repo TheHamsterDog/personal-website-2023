@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
 
+
     &-open {
         transform: translate(0, 0);
     }
@@ -52,16 +53,24 @@
                 font-size: 3.5rem;
                 margin: 1rem 0 2rem;
             }
+
             p {
                 // align-self: start;
                 justify-self: flex-start;
-    
+
                 grid-column: span 2;
                 font-size: 1.8rem;
             }
         }
 
-      
+
+
+        @media screen and (max-height: 500px) {
+            min-height: fit-content;
+        }
+
+
+
 
         position: relative;
         // height: 80vh;
@@ -71,6 +80,11 @@
         // align-items: flex-start;
         grid-template-columns: 1fr 1fr;
         grid-gap: 3rem;
+
+        @media screen and (max-height: 350px) {
+            grid-gap: 1.5rem;
+            padding: 1.4rem;
+        }
 
         h2 {
             grid-column: span 2;
@@ -195,6 +209,11 @@
             &:nth-child(7),
             &:nth-child(6) {
                 grid-column: span 2;
+
+                @media screen and (max-height: 500px) {
+
+                    grid-column: auto
+                }
             }
 
             &:nth-child(7) {

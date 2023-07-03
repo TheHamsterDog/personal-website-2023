@@ -1,8 +1,22 @@
 .home-header {
     height: calc(100vh);
+
     // width: calc(100vw);
+    @include respond(2) {
+        // grid-template-columns: auto;
+        min-height: fit-content;
+        // width: auto;
+        height: auto;
+    }
 
     display: grid;
+
+    @include respond(4) {
+        // display: block;
+        grid-template-columns: 1fr;
+    }
+
+
     grid-template-columns: 1fr 2fr;
     // grid-gap: 4rem;
 
@@ -15,6 +29,14 @@
         position: relative;
         align-items: center;
 
+     
+        @include respond(4) {
+            width: calc(100vw - 6rem);
+            padding: 6rem 3rem;
+            // display: none;
+            // padding: 5rem 2rem 5rem;
+        }
+
 
         &-info {
             display: flex;
@@ -22,10 +44,35 @@
             grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 2rem;
             width: fit-content;
+
+            @include respond(3) {
+                // width: auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
             // margin: 0 auto;;
             // justify-content: space-evenly;
 
             &-each {
+                &:nth-child(2) {
+                    grid-column: span 2;
+                    order: -1;
+                    height: fit-content;
+                }
+
+                height: fit-content;
+
+                &:nth-child(6) {
+                    grid-column: span 2;
+
+                    // order: 4;
+
+
+                }
+
+                // &5
+
                 margin: 1rem;
                 ;
                 padding: 4rem 2rem;
@@ -51,7 +98,14 @@
     background-image: linear-gradient(rgba(#000, 0.3), rgba(#000, 0.2));
 
     &-left {
+
         h1 {
+
+            @include respond(696px) {
+                padding-top: 10rem;
+
+            }
+
             font-size: 4.5rem;
             margin-top: 0;
             margin-bottom: 3rem;
@@ -82,6 +136,13 @@
         // z-index: 2;
         padding: 2.5rem;
         position: relative;
+
+        @include respond(2) {
+            padding: 4rem 4rem 10rem;
+            // height: fit-content;
+            // width: ;
+            min-height: fit-content
+        }
 
         img {
             z-index: -1;

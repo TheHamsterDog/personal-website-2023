@@ -1,6 +1,10 @@
 .home-work {
     background-image: linear-gradient(#00695C, #00BFA5);
     padding: 6.5rem 6.5rem 12rem;
+    color: #fff;
+    @include respond(1) {
+        padding: 4rem;
+    }
 
     h2 {
         text-transform: uppercase;
@@ -17,6 +21,21 @@
     }
 
     &-container {
+
+        @include respond(4) {
+            height: auto;
+            display: block !important;
+        }
+
+        @include respond(2) {
+            display: grid;
+            grid-gap: 2rem;
+            padding: 0;
+            // align-items: center;
+            // justify-content: center;
+            grid-template-columns: 1fr 1fr;
+        }
+
         display: flex;
         margin: 0;
         grid-template-columns: 1fr 1fr 1fr;
@@ -36,6 +55,33 @@
             position: relative;
             width: 46rem;
             height: 33rem;
+
+            @include respond(2) {
+                width: 60rem;
+                // height: 35rem;
+                margin: 3rem auto;
+                // padding: 4rem 2rem;
+            }
+            @include respond(3) {
+                width: 40rem;
+                height: 35rem;
+                margin: 3rem auto;
+                // padding: 4rem 2rem;
+            }
+
+
+            @include respond(4) {
+                width: auto;
+                height: 35rem;
+                margin: 6rem auto;
+                // padding: 4rem 2rem;
+            }
+            @include respond(330px) {
+                width: auto;
+                height: 40rem;
+                margin: 6rem auto;
+                // padding: 4rem 2rem;
+            }
 
             &:nth-child(1) &-back,
             &:nth-child(1) &-front {
@@ -101,11 +147,19 @@
             &-front {
                 height: calc(33rem - 6rem);
 
+                @include respond(1) {
+                    height: calc(100% - 6rem);
+                }
+
                 padding: 3rem;
             }
 
             &-front,
             &-back {
+                @include respond(1) {
+                    width: auto;
+
+                }
 
                 transition: all 0.5s;
                 backface-visibility: hidden;
@@ -118,6 +172,12 @@
             &-back {
                 width: 100%;
                 height: 33rem;
+
+                @include respond(1) {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                }
 
                 &-container {
                     width: 100%;
@@ -132,8 +192,14 @@
 
                     p {
                         z-index: 4;
+
+                        @include respond(1) {
+                            text-align: center;
+
+                        }
+
                         padding: 3rem;
-                        margin: 1.4rem 0 0 ;
+                        margin: 1.4rem 0 0;
                     }
 
                     position: relative;
@@ -143,6 +209,10 @@
                 transform: rotateY(180deg);
 
                 &-map {
+                    @include respond(1) {
+                        // width: auto;
+                        height: 70%;
+                    }
 
                     z-index: 2;
                     // margin-bottom: 2rem;
@@ -152,6 +222,11 @@
                 }
 
                 p {
+                    @include respond(1) {
+                        margin: 0;
+                        // font-size: 1.4rem;
+                    }
+
                     margin-bottom: 4rem;
                 }
             }
