@@ -45,7 +45,7 @@ const experience = {
 const Experience = (props, ref) => {
     const [state, setState] = React.useState('Leadership');
     return (
-        <div ref={ref} className="home-experience">
+        <div ref={ref} className={state === "Leadership" ? "home-experience home-experience-leadership" : state === "Initiatives" ? "home-experience home-experience-initiatives" : "home-experience home-experience-volunteering" } >
             <h2>Other Experiences</h2>
             <div className="home-experience-options">
                 <div className="home-experience-options-selector" style={{ transition: "all 0.3s", transform: state === "Leadership" ? "" : state === "Initiatives" ? "translateX(100%)" : "translateX(200%)" }} ></div>

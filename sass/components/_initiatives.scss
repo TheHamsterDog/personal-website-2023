@@ -4,26 +4,57 @@
     height: 60rem;
     overflow: hidden;
 
-    @include respond(1) {
-        min-height: 80rem;
+    &-volunteering {
+        @include respond(1) {
+            min-height: 80rem;
+        }
+
+        @include respond(330px) {
+            min-height: 80rem !important;
+        }
     }
 
-    @include respond(2) {
-        min-height: 100rem;
+    &-initiatives {
+        @include respond(1) {
+            min-height: 80rem;
+        }
+
+        @include respond(2) {
+            min-height: 100rem;
+        }
+
+        @include respond(4) {
+            min-height: 140rem;
+        }
+
+        @include respond(330px) {
+            min-height: 180rem !important;
+        }
+
+        @include respond(390px) {
+            min-height: 160rem;
+        }
     }
 
-    @include respond(4) {
-        min-height: 140rem;
+    &-leadership {
+        @include respond(1) {
+            min-height: 80rem;
+        }
+
+        @include respond(2) {
+            min-height: 100rem;
+        }
+        @include respond(330px) {
+            min-height: 120rem !important;
+        }
+
+        @include respond(4) {
+            min-height: 110rem;
+        }
     }
 
-    @include respond(390px) {
-        min-height: 160rem;
-    }
+    transition: all 0.3s;
 
-    @include respond(330px) {
-        min-height: 200rem;
-    }
- 
     position: relative;
     // width: calc(100vw - 14.5rem);
 
@@ -69,12 +100,12 @@
                     left: auto;
 
                     transform: translate(20%, -50%);
-                    
-                @include respond(6) {
 
-                    transform: translate(10%, -50%);
-                    // font-size: 1.2rem;
-                }
+                    @include respond(6) {
+
+                        transform: translate(10%, -50%);
+                        // font-size: 1.2rem;
+                    }
                 }
             }
 
@@ -197,9 +228,10 @@
     @include respond(2) {
         padding: 4rem;
     }
+
     @include respond(330px) {
         padding: 2rem;
-        
+
         min-height: 140rem;
         // padding: 4rem 2rem;
     }

@@ -570,32 +570,63 @@ body {
   color: #fff;
   height: 60rem;
   overflow: hidden;
+  transition: all 0.3s;
   position: relative;
   padding: 6.5rem 6.5rem 12rem;
 }
 @media screen and (max-width: 1600px) {
-  .home-experience {
+  .home-experience-volunteering {
+    min-height: 80rem;
+  }
+}
+@media screen and (max-width: 330px) {
+  .home-experience-volunteering {
+    min-height: 80rem !important;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .home-experience-initiatives {
     min-height: 80rem;
   }
 }
 @media screen and (max-width: 1200px) {
-  .home-experience {
+  .home-experience-initiatives {
     min-height: 100rem;
   }
 }
 @media screen and (max-width: 700px) {
-  .home-experience {
+  .home-experience-initiatives {
     min-height: 140rem;
   }
 }
+@media screen and (max-width: 330px) {
+  .home-experience-initiatives {
+    min-height: 180rem !important;
+  }
+}
 @media screen and (max-width: 390px) {
-  .home-experience {
+  .home-experience-initiatives {
     min-height: 160rem;
   }
 }
+@media screen and (max-width: 1600px) {
+  .home-experience-leadership {
+    min-height: 80rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .home-experience-leadership {
+    min-height: 100rem;
+  }
+}
 @media screen and (max-width: 330px) {
-  .home-experience {
-    min-height: 200rem;
+  .home-experience-leadership {
+    min-height: 120rem !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .home-experience-leadership {
+    min-height: 110rem;
   }
 }
 .home-experience h2 {
