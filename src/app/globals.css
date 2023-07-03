@@ -230,7 +230,9 @@ body {
   background-image: linear-gradient(to bottom right, rgba(13, 37, 63, 0.9), rgba(33, 95, 141, 0.8));
 }
 .footer h3 {
-  font-size: 2rem;
+  font-size: 2rem !important;
+  color: #fff;
+  font-family: monospace;
   margin: 0;
 }
 .footer-links {
@@ -1326,6 +1328,69 @@ body {
 }
 .navbar div {
   cursor: pointer;
+}
+
+.notfound {
+  background-image: linear-gradient(90deg, rgba(9, 213, 124, 0.3), rgba(9, 74, 213, 0.3)), url("https://images.unsplash.com/photo-1602984338060-bfddce132ebc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1");
+  min-height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+.notfound-rage {
+  animation: animation2 1s;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(201, 83, 63, 0.8), rgba(81, 13, 2, 0.6)), url("https://images.unsplash.com/photo-1470347051932-8ca24b11b3e3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+  background-size: cover;
+  color: transparent;
+  -webkit-background-clip: text;
+  font-size: 10rem;
+  float: left;
+  padding-right: 3rem;
+  border-right: 1px solid #E9E8E7;
+  margin-right: 3rem;
+}
+.notfound-details {
+  padding-top: 2rem;
+  float: left;
+  font-size: 4rem;
+  background-image: url("https://images.unsplash.com/photo-1431440869543-efaf3388c585?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+  background-size: contain;
+  color: transparent;
+  -webkit-background-clip: text;
+  display: inline-block;
+  margin: 1rem 0;
+}
+.notfound-message {
+  text-align: center;
+  color: #E9E8E7;
+  margin: 3rem auto;
+  font-size: 2rem;
+}
+.notfound-container {
+  transition: transform 3s;
+  animation: animation8 1.5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.notfound-navigation {
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+}
+.notfound-navigation-button {
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+  border: none;
+  background-color: #139172;
+  height: 5rem;
+  color: #E9E8E7;
+  font-size: 1.7rem;
+  width: 25%;
+}
+.notfound-navigation-button:hover {
+  transform: scale(0.9);
 }
 
 /*# sourceMappingURL=globals.css.map */

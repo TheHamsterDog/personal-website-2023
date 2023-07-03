@@ -11,8 +11,19 @@ import TestAndAchievements from '@/components/test-and-achievements';
 import Projects from '@/components/projects';
 import Footer from '@/components/footer';
 import Contact from '@/components/contact';
-import Navbar from '@/components/navbar';
 
+import Navbar from '@/components/navbar';
+import Head from 'next/head';
+// const metadata = {
+//   title: 'Shreshth Verma',
+//   "og:title": 'Shreshth Verma',
+//   description: 'I\'m Shreshth Verma: A Full Stack Developer, a perpetual student, an entrepreneur, and an amateur poet',
+//   "og:description": 'I\'m Shreshth Verma: A Full Stack Developer, a perpetual student, an entrepreneur, and an amateur poet',
+//   "og:url": "https://www.shreshthverma.me",
+//   "keywords": "Shreshth, Verma, Shreshth Verma, shreshthverma.me, Personal Site, personal, site",
+//   "og:image": "/favicon.ico"
+
+// }
 export default function Home() {
   const [open, setOpen] = React.useState(false)
   const home = React.useRef(null);
@@ -23,12 +34,16 @@ export default function Home() {
 
   return (
     <div className='home'>
-      <Header ref={home}/>
-      <Work ref={work}/>
-      <Experience ref={experience}/>
-      <Projects ref={projects}/>
+      {/* <Head>
+        {Object.keys(metadata).map(a => {
+          return (<meta name={a} content={metadata[a]} />)
+        })}
+      </Head> */}
+      <Header ref={home} />
+      <Work ref={work} />
+      <Experience ref={experience} />
+      <Projects ref={projects} />
       <Skills ref={skills}></Skills>
-      <Footer />
       <Contact open={open} setOpen={setOpen} />
       <Navbar setOpen={setOpen} home={home} work={work} experience={experience} projects={projects} skills={skills} />
       {/* <TestAndAchievements /> */}

@@ -1,7 +1,8 @@
+"use client"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import DescriptionIcon from '@mui/icons-material/Description';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 const Footer = (props) => {
     return (<div className="footer">
