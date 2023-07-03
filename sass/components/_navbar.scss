@@ -67,12 +67,12 @@
             &-icon {
 
                 @include respond(1) {
-                    display: inherit;
+                    display: inherit !important;
                     margin-right: 1rem;
                     font-size: 2.5rem !important;
                 }
 
-                display: none;
+                display: none !important;
             }
         }
 

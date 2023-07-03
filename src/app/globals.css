@@ -1312,11 +1312,11 @@ body {
   }
 }
 .navbar-inner-each-icon {
-  display: none;
+  display: none !important;
 }
 @media screen and (max-width: 1600px) {
   .navbar-inner-each-icon {
-    display: inherit;
+    display: inherit !important;
     margin-right: 1rem;
     font-size: 2.5rem !important;
   }
