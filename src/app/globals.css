@@ -585,7 +585,17 @@ body {
 }
 @media screen and (max-width: 700px) {
   .home-experience {
-    min-height: 120rem;
+    min-height: 140rem;
+  }
+}
+@media screen and (max-width: 390px) {
+  .home-experience {
+    min-height: 160rem;
+  }
+}
+@media screen and (max-width: 330px) {
+  .home-experience {
+    min-height: 200rem;
   }
 }
 .home-experience h2 {

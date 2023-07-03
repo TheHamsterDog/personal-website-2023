@@ -13,9 +13,17 @@
     }
 
     @include respond(4) {
-        min-height: 120rem;
+        min-height: 140rem;
     }
 
+    @include respond(390px) {
+        min-height: 160rem;
+    }
+
+    @include respond(330px) {
+        min-height: 200rem;
+    }
+ 
     position: relative;
     // width: calc(100vw - 14.5rem);
 
