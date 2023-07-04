@@ -12,7 +12,7 @@ export const metadata = {
   "og:description": 'I\'m Shreshth Verma: A Full Stack Developer, a perpetual student, an entrepreneur, and an amateur poet',
   "og:url":"https://www.shreshthverma.me",
   "keywords":"Shreshth, Verma, Shreshth Verma, shreshthverma.me, Personal Site, personal, site",
-  "og:image":"/favicon.ico"
+  "og:image":"/profile.jpeg"
   
 }
 
