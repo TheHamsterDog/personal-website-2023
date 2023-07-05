@@ -94,7 +94,7 @@ const Projects = (props, ref) => {
                             transition: "all 0.2s"
                         }}
                         className={"home-projects-container-each home-projects-container-each-" + ((index + 1) - selected)}>
-                        <img alt={project.title} width={780} height={620} loading="lazy" src={project.image || "https://images.unsplash.com/photo-1528072164453-f4e8ef0d475a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"} className={"home-projects-container-each-background"} />
+                        <img alt={project.title} width={780} height={620} loading="eager" src={project.image || "https://images.unsplash.com/photo-1528072164453-f4e8ef0d475a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80"} className={"home-projects-container-each-background"} />
                         <div className="home-projects-container-each-container">
                             <div className="home-projects-container-each-container-inner">
                                 <h3>{project.title}</h3>
