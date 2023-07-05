@@ -25,7 +25,7 @@ const Header = (props, ref) => {
                 <h1>
                     Shreshth Verma
                 </h1>
-                <img src="/profile.jpeg"
+                <img src="/profile.webp"
                     alt="Profile Picture" />
                 <h2>
                     A MERN stack developer, an entrepreneur, a perpetual student, and an amateur poet.

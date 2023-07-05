@@ -13,7 +13,7 @@ export const metadata = {
     title:"Shreshth Verma",
     description:'I\'m Shreshth Verma: A Full Stack Developer, a perpetual student, an entrepreneur, and an amateur poet',
     url:"https://www.shreshthverma.me",
-    "images":["/profile.jpeg"]
+    "images":["/profile.webp"]
   },
   "keywords":"Shreshth, Verma, Shreshth Verma, shreshthverma.me, Personal Site, personal, site",
 
