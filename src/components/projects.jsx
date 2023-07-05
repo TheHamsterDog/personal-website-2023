@@ -10,7 +10,7 @@ const projects = [
     },
     {
         title: "Elect.io",
-        link: "https://electio.shreshthverma.me",
+        link: "https://github.com/Elect-io/elect.io",
         description: "It is a web app that seeks to help the masses vote in a more educated manner by matching their opinions against politicians",
         technologiesUsed: "MongoDB(Mongoose), Node.JS, Express, React, Redux, SCSS, Material UI, JavaScript, MailJet",
         image: "/electio.png"
