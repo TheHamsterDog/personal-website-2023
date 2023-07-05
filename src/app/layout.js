@@ -13,7 +13,7 @@ export const metadata = {
     title:"Shreshth Verma",
     description:'I\'m Shreshth Verma: A Full Stack Developer, a perpetual student, an entrepreneur, and an amateur poet',
     url:"https://www.shreshthverma.me",
-    "images":["https://res.cloudinary.com/dx73dzg3g/image/upload/v1688586541/personal-website/profile_s2nlkp.webp"]
+    "images":["/profile.webp"]
   },
   "keywords":"Shreshth, Verma, Shreshth Verma, shreshthverma.me, Personal Site, personal, site",
 
@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        <meta name='og:image' content='https://res.cloudinary.com/dx73dzg3g/image/upload/v1688586541/personal-website/profile_s2nlkp.webp'></meta>
+        <meta name='og:image' content='/profile.webp'></meta>
       </Head>
       <body className={inter.className}>{children}    <Footer />
   </body>
