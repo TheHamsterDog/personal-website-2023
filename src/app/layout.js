@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        <meta name='og:image' content='/profile.jpeg'></meta>
+        <meta name='og:image' content='/profile.webp'></meta>
       </Head>
       <body className={inter.className}>{children}    <Footer />
   </body>
