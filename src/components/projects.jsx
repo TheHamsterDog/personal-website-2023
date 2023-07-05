@@ -7,14 +7,14 @@ const projects = [
         link: "https://covidhelp.shreshthverma.me",
         description: "A web app that aims tp help disadvantaged people fund their medicare expenses",
         technologiesUsed: "MongoDB(Mongoose), Node.JS, Express, React, Redux, SCSS, Material UI, JavaScript, MailJet",
-        image: "/covidhelp.webp"
+        image: "https://res.cloudinary.com/dx73dzg3g/image/upload/v1688586541/personal-website/covidhelp_p2drvx.webp"
     },
     {
         title: "Elect.io",
         link: "https://github.com/Elect-io/elect.io",
         description: "It is a web app that seeks to help the masses vote in a more educated manner by matching their opinions against politicians",
         technologiesUsed: "MongoDB(Mongoose), Node.JS, Express, React, Redux, SCSS, Material UI, JavaScript, MailJet",
-        image: "/electio.webp"
+        image: "https://res.cloudinary.com/dx73dzg3g/image/upload/v1688586541/personal-website/electio_jk045a.webp"
     },
 
     {
@@ -22,14 +22,14 @@ const projects = [
         link: "https://extraquadrata.dpskolar.org/",
         description: "The website for the first ever extra quadrata tech fest that, among other things, allowed schools to register their teams, and view and confirm their registrations.",
         technologiesUsed: "MongoDB(Mongoose), Next.js, SCSS, Material UI, JavaScript, MailJet",
-        image: "/extraquadrata.webp"
+        image: "https://res.cloudinary.com/dx73dzg3g/image/upload/v1688586541/personal-website/extraquadrata_rqybhb.webp"
     },
     {
         title: "Socizilla",
         link: "https://socizilla.shreshthverma.me",
         description: "It is a social media platform that has a lot of features like real time messaging, AI post tagging, and more.",
         technologiesUsed: "MongoDB(Mongoose), Cloudinary, Node.JS, Express, React, Redux, Socket.io, SCSS, Material UI, JavaScript, MailJet",
-        image: "/socizilla.webp"
+        image: "https://res.cloudinary.com/dx73dzg3g/image/upload/v1688586540/personal-website/socizilla_s0ylqs.webp"
     },
 
     {
@@ -37,7 +37,7 @@ const projects = [
         link: "https://retain.shreshthverma.me/",
         description: "It is a note-keeping PWA that has almost every feature that one could ask for like labels, search, offline data storage, art and image storage, and so on.",
         technologiesUsed: "React, SCSS, Material UI, JavaScript",
-        image: "/retain.webp"
+        image: "https://res.cloudinary.com/dx73dzg3g/image/upload/v1688586540/personal-website/retain_f4xt9n.webp"
     },
 
     {
@@ -45,26 +45,26 @@ const projects = [
         link: "https://dps-kolar-road-bhopal-code-hour.github.io/TechFest/",
         description: "A website for a fictitious travel agency that employs various frontend design methodologies",
         technologiesUsed: "HTML, SCSS, JavaScript, Maplibre",
-        image: "/voyages.webp"
+        image: "https://res.cloudinary.com/dx73dzg3g/image/upload/v1688586541/personal-website/voyages_mf8jsi.webp"
     },
     {
         title: "Custom Blog Site",
         link: "https://blog.shreshthverma.me/",
         description: "A simple blog site that has features such as nested comments, admin rights, likes, dislikes, and more",
         technologiesUsed: "MongoDB(Mongoose), Node.JS, Express, React, Redux, SCSS, Material UI, JavaScript, MailJet",
-        image: "/blog.webp"
+        image: "https://res.cloudinary.com/dx73dzg3g/image/upload/v1688586540/personal-website/blog_fjojdj.webp"
     },
     {
         title: "Surveys",
         link: "https://survey.shreshthverma.me/",
         description: "A survey-taking website that I created back in 10th grade.",
         technologiesUsed: "HTML, SCSS, JavaScript, React, Redux, SCSS, NodeJS, Express, Material UI",
-        image: "/surveys.webp"
+        image: "https://res.cloudinary.com/dx73dzg3g/image/upload/v1688586540/personal-website/surveys_tk3k8p.webp"
     },
     {
         title: "PurseX",
         link: "https://github.com/PURSE-X/mobile-client",
-        image: "/pursex.webp",
+        image: "https://res.cloudinary.com/dx73dzg3g/image/upload/v1688586540/personal-website/pursex_dpsiph.webp",
         description: "An alternative to popular fintech apps that allows users to buy and sell stocks on their own. The link only shows the github repository of the mobile client",
         technologiesUsed: "React Native, Redux, Express, NodeJS, MongoDB, and more",
     }

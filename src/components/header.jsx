@@ -25,7 +25,7 @@ const Header = (props, ref) => {
                 <h1>
                     Shreshth Verma
                 </h1>
-                <img src="/profile.webp"
+                <img src="https://res.cloudinary.com/dx73dzg3g/image/upload/v1688586541/personal-website/profile_s2nlkp.webp"
                     alt="Profile Picture" />
                 <h2>
                     A MERN stack developer, an entrepreneur, a perpetual student, and an amateur poet.
