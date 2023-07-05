@@ -41,9 +41,9 @@ const Header = (props, ref) => {
                     {Object.keys(facts).map((a) => {
                         return (
                             <div className='home-header-right-info-each'>
-                                <h4 className='home-header-right-info-each-header'>
+                                <h3 className='home-header-right-info-each-header'>
                                     {a}
-                                </h4>
+                                </h3>
                                 <p>
                                     {facts[a]}
                                 </p>

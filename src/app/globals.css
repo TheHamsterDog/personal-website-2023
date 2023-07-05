@@ -510,7 +510,7 @@ body {
 .home-header-right-info-each:nth-child(6) {
   grid-column: span 2;
 }
-.home-header-right-info-each h4 {
+.home-header-right-info-each h3 {
   margin: 0;
   font-size: 2rem;
 }
