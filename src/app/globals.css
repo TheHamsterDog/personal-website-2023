@@ -1139,7 +1139,6 @@ body {
   position: absolute;
   object-fit: cover;
   width: 100%;
-  backdrop-filter: blur(2rem);
   z-index: 0;
   height: 100%;
 }

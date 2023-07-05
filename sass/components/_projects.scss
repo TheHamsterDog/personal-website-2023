@@ -189,7 +189,7 @@
                 position: absolute;
                 object-fit: cover;
                 width: 100%;
-                backdrop-filter: blur(2rem);
+                // filter: blur(4px);
                 z-index: 0;
                 height: 100%;
             }
@@ -199,7 +199,6 @@
             width: 100rem;
             position: absolute;
             left: 50%;
-
             // margin-top: 5rem;
             transform: translate(-50%, 0);
         }
