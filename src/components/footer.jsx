@@ -7,13 +7,13 @@ import DescriptionIcon from '@mui/icons-material/Description';
 const Footer = (props) => {
     return (<div className="footer">
         <div className='footer-links'>
-            <a target="__blank__" className='footer-links-each' href="https://github.com/TheHamsterDog">
+            <a target="__blank__" aria-label="Checkout my github profile" className='footer-links-each' href="https://github.com/TheHamsterDog">
                 <GitHubIcon className='footer-links-each-icon' />
             </a>
-            <a target="__blank__" className='footer-links-each' href="https://www.linkedin.com/in/shreshth-verma-17ab39213/">
+            <a target="__blank__" aria-label="Checkout my linkedIn profile" className='footer-links-each' href="https://www.linkedin.com/in/shreshth-verma-17ab39213/">
                 <LinkedInIcon className='footer-links-each-icon' />
             </a>
-            <a target="__blank__" className='footer-links-each' href="/resume.pdf">
+            <a target="__blank__" aria-label="Checkout my resume" className='footer-links-each' href="/resume.pdf">
                 <DescriptionIcon className='footer-links-each-icon' />
             </a>
         </div>
