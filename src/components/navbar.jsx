@@ -1,4 +1,4 @@
-import Link from 'next/link';
+
 import React, { forwardRef } from 'react';
 import CallIcon from '@mui/icons-material/Call';
 import HandymanIcon from '@mui/icons-material/Handyman';
@@ -6,19 +6,6 @@ import WorkIcon from '@mui/icons-material/Work';
 import HomeIcon from '@mui/icons-material/Home';
 import WebIcon from '@mui/icons-material/Web';
 import HourglassFullIcon from '@mui/icons-material/HourglassFull';
-import Box from '@mui/material/Box';
-import SpeedDial from '@mui/material/SpeedDial';
-import SpeedDialIcon from '@mui/material/SpeedDialIcon';
-import SpeedDialAction from '@mui/material/SpeedDialAction';
-
-const actions = [
-    { icon: <HomeIcon />, name: 'Home' },
-    { icon: <WorkIcon />, name: 'Work' },
-    { icon: <HourglassFullIcon />, name: 'Experience' },
-    { icon: <WebIcon />, name: 'Projects' },
-    { icon: <HandymanIcon />, name: 'Skills' },
-    { icon: <CallIcon />, name: 'Contact' }
-];
 
 
 const Navbar = (props) => {

@@ -1,19 +1,15 @@
 "use client";
 
 import React from 'react';
-import Image from 'next/image'
 import Header from '../components/header';
 import Work from '../components/work';
 import Experience from '../components/initiatives';
 import Skills from '@/components/skills';
-import TestAndAchievements from '@/components/test-and-achievements';
 
 import Projects from '@/components/projects';
-import Footer from '@/components/footer';
 import Contact from '@/components/contact';
 
 import Navbar from '@/components/navbar';
-import Head from 'next/head';
 // const metadata = {
 //   title: 'Shreshth Verma',
 //   "og:title": 'Shreshth Verma',
